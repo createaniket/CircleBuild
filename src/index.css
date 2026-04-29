@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Editorial off-white canvas + ink black */
+    --background: 40 20% 98%;
+    --foreground: 0 0% 7%;
+
+    --canvas: 38 22% 96%;
+    --ink: 0 0% 7%;
+    --ink-soft: 0 0% 24%;
+    --rule: 30 8% 88%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 0 0% 7%;
+    --primary-foreground: 40 30% 98%;
+
+    --secondary: 38 22% 94%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 38 18% 93%;
+    --muted-foreground: 0 0% 38%;
+
+    --accent: 28 90% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 8% 88%;
+    --input: 30 8% 88%;
+    --ring: 0 0% 7%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  ::selection { background: hsl(var(--ink)); color: hsl(var(--background)); }
+}
+
+@layer components {
+  .editorial-container {
+    @apply mx-auto w-full max-w-[1360px] px-6 md:px-10 lg:px-16;
+  }
+  .display-serif {
+    font-family: 'Fraunces', Georgia, serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+  }
+  .mono {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+  }
+  .eyebrow {
+    @apply mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground;
+  }
+  .rule { @apply h-px w-full bg-border; }
+  .hover-underline {
+    @apply relative after:absolute after:left-0 after:-bottom-0.5 after:h-px after:w-full after:origin-right after:scale-x-0 after:bg-current after:transition-transform after:duration-500 hover:after:origin-left hover:after:scale-x-100;
+  }
+  .grain::before {
+    content: "";
+    position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(hsl(var(--ink) / 0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+    mix-blend-mode: multiply;
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .reveal { animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both; }
+  .reveal-slow { animation: rise 1.4s cubic-bezier(.2,.7,.2,1) both; }
+  .marquee { animation: marquee 40s linear infinite; }
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
