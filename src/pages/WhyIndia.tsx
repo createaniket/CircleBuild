@@ -7,7 +7,7 @@ const Nav = () => (
       <Link to="/" className="flex items-center gap-2">
         <span className="block h-2.5 w-2.5 rounded-full bg-ink" />
         <span className="display-serif text-lg">
-          CircleBuild<span className="text-accent">.</span>
+          CircleBuilds<span className="text-accent">.</span>
         </span>
       </Link>
       <nav className="hidden items-center gap-9 text-sm md:flex">

@@ -9,7 +9,7 @@ const Nav = () => (
     <div className="editorial-container flex h-16 items-center justify-between">
       <a href="#" className="flex items-center gap-2">
         <span className="block h-2.5 w-2.5 rounded-full bg-ink" />
-        <span className="display-serif text-lg">CircleBuild<span className="text-accent">.</span></span>
+        <span className="display-serif text-lg">CircleBuilds<span className="text-accent">.</span></span>
       </a>
       <nav className="hidden items-center gap-9 text-sm md:flex">
         {["Services", "Capabilities", "Model", "Academy", "Work"].map((l) => (
@@ -42,7 +42,7 @@ const Hero = () => (
             Build your next <em className="italic text-accent">business</em> backbone.
           </h1>
           <p className="mt-8 max-w-xl text-base leading-relaxed text-ink-soft md:text-lg reveal-slow">
-            CircleBuild designs, builds and operates the apps, systems and digital
+            CircleBuilds designs, builds and operates the apps, systems and digital
             infrastructure modern companies actually need - engineered with AI-assisted
             production, expert oversight and a managed monthly layer that keeps
             everything live, sharp and compounding.
@@ -173,7 +173,7 @@ const Model = () => {
           <div className="grid grid-cols-12 border-b border-border bg-canvas px-6 py-4 text-xs uppercase tracking-widest text-muted-foreground mono">
             <div className="col-span-4">Dimension</div>
             <div className="col-span-4">Old agency</div>
-            <div className="col-span-4 text-ink">CircleBuild</div>
+            <div className="col-span-4 text-ink">CircleBuilds</div>
           </div>
           {rows.map(([k, a, b], i) => (
             <div key={k} className={`grid grid-cols-12 items-center px-6 py-6 ${i !== rows.length - 1 ? "border-b border-border" : ""}`}>
@@ -194,7 +194,7 @@ const Layer = () => {
     { n: "02", t: "Finance", d: "Counts the money.", muted: true },
     { n: "03", t: "Operations", d: "Keeps it running.", muted: true },
     { n: "04", t: "People", d: "Builds the team.", muted: true },
-    { n: "05", t: "CircleBuild", d: "Builds and runs the digital backbone everything else now depends on.", muted: false },
+    { n: "05", t: "CircleBuilds", d: "Builds and runs the digital backbone everything else now depends on.", muted: false },
   ];
   return (
     <section className="bg-background py-24 md:py-32">
@@ -214,7 +214,7 @@ const Layer = () => {
               freelancers, frozen SaaS or one overworked CTO.
             </p>
             <p className="mt-5 text-base leading-relaxed text-ink-soft md:text-lg">
-              CircleBuild plugs in as that layer. Embedded, accountable, on the
+              CircleBuilds plugs in as that layer. Embedded, accountable, on the
               inside. The team your org chart was missing.
             </p>
           </div>
@@ -318,7 +318,7 @@ const Academy = () => {
             <p className="eyebrow">§ 07 - The Academy</p>
             <h2 className="display-serif mt-4 text-4xl leading-tight md:text-5xl">A modern coding school, training the workforce we deploy.</h2>
             <p className="mt-6 text-base leading-relaxed text-ink-soft md:text-lg">
-              CircleBuild Academy trains a global pipeline of operators, account
+              CircleBuilds Academy trains a global pipeline of operators, account
               managers and AI-fluent specialists - the human layer behind every
               product we ship and every system we maintain.
             </p>
@@ -333,7 +333,7 @@ const Academy = () => {
           </div>
           <div className="lg:col-span-7">
             <div className="overflow-hidden rounded-sm border border-border">
-              <img src={academyImg} alt="CircleBuild Academy desk" width={1400} height={1000} loading="lazy" className="h-auto w-full" />
+              <img src={academyImg} alt="CircleBuilds Academy desk" width={1400} height={1000} loading="lazy" className="h-auto w-full" />
             </div>
             <div className="mt-8 divide-y divide-border border-y border-border">
               {tracks.map(([t, d], i) => (
@@ -726,7 +726,7 @@ const FinalCTA = () => (
 //         <div className="md:col-span-5">
 //           <div className="flex items-center gap-2">
 //             <span className="block h-2.5 w-2.5 rounded-full bg-ink" />
-//             <span className="display-serif text-lg">CircleBuild<span className="text-accent">.</span></span>
+//             <span className="display-serif text-lg">CircleBuilds<span className="text-accent">.</span></span>
 //           </div>
 //           <p className="mt-4 max-w-sm text-sm text-ink-soft">The operating system for modern businesses. Built, managed and trained from London with a global pipeline.</p>
 //         </div>
@@ -744,7 +744,7 @@ const FinalCTA = () => (
 //         ))}
 //       </div>
 //       <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
-//         <span>© {new Date().getFullYear()} CircleBuild Studio Ltd. All rights reserved.</span>
+//         <span>© {new Date().getFullYear()} CircleBuilds Studio Ltd. All rights reserved.</span>
 //         <span className="mono">v1.0 - Issue 01</span>
 //       </div>
 //     </div>
@@ -759,7 +759,7 @@ const Footer = () => (
           <div className="flex items-center gap-2">
             <span className="block h-2.5 w-2.5 rounded-full bg-ink" />
             <span className="display-serif text-lg">
-              CircleBuild<span className="text-accent">.</span>
+              CircleBuilds<span className="text-accent">.</span>
             </span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-ink-soft">
@@ -788,7 +788,7 @@ const Footer = () => (
       </div>
 
       <div className="mt-12 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted-foreground md:flex-row md:items-center">
-        <span>© {new Date().getFullYear()} CircleBuild Studio Ltd. All rights reserved.</span>
+        <span>© {new Date().getFullYear()} CircleBuilds Studio Ltd. All rights reserved.</span>
         <span className="mono">v1.0 - Issue 01</span>
       </div>
     </div>
