@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import WhyIndia from "./pages/WhyIndia.tsx";
+import Dtwoc from "./pages/Dtwoc.tsx";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +19,8 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/why-india" element={<WhyIndia />} />
+          <Route path="/d2c" element={<Dtwoc />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

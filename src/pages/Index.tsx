@@ -12,6 +12,7 @@ const Nav = () => (
         <span className="display-serif text-lg">CircleBuilds<span className="text-accent">.</span></span>
       </a>
       <nav className="hidden items-center gap-9 text-sm md:flex">
+      <Link to="/d2c" className="hover-underline text-ink-soft hover:text-ink">D2C</Link>
         {["Services", "Capabilities", "Model", "Academy", "Work"].map((l) => (
           <a key={l} href={`#${l.toLowerCase()}`} className="hover-underline text-ink-soft hover:text-ink">{l}</a>
         ))}
