@@ -7,6 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import WhyIndia from "./pages/WhyIndia.tsx";
 import Dtwoc from "./pages/Dtwoc.tsx";
+import CircleBuildsBriefs from "./pages/CircleBuildsBriefs.tsx";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/why-india" element={<WhyIndia />} />
           <Route path="/d2c" element={<Dtwoc />} />
+          <Route path="circlebuildsbriefs" element={<CircleBuildsBriefs />} />
 
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
